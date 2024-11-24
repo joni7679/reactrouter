@@ -7,6 +7,7 @@ import About from './Pages/About.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Login from './Pages/Login.jsx';
 import Services from './Pages/Services.jsx';
+import Error404 from './Pages/Error404.jsx';
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
   },
   {
     path: '*',
-    element: <h1>404 - Page Not Found</h1>,
+    element: <Error404/>,
   },
 ]);
 
